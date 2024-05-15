@@ -1,6 +1,77 @@
-:root {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+body {
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    background-color: #3B2A9F;
+    color: white;
+}
+
+main {
+    width: 90%;
+    text-align: center;
+    /* background-color: green; */
+}
+
+#win-div {
+    display: none;
+    color: green;
+}
+
+#lose-div {
+    display: none;
+    color: red;
+}
+
+#draw-div {
+    display: none;
+    color: gray;
+}
+
+#result-div {
+    margin-top: 2rem;
+}
+
+#turn-div {
+    margin-top: 2rem;
+}
+
+#choice-input-div {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.choice-div {
+    width: 33.33%;
+    /* background-color: red; */
+}
+
+.choice-img {
+    width: 100%;
+}
+
+.choice-input {
+    width: 50px;
+    height: 50px;
+}
+
+#game-button {
+    margin-top: 1rem;
+    padding: 10px 40px;
+    /* width: 15%; */
+    border-radius: 16px;
+    border: solid white 3px;
+    color: white;
+    background-color: inherit;
+    font-size: 20px;
+}
+
+#game-button:hover {
+    color: red;
+    border-color: red;
 }

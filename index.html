@@ -1,17 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>Rock Paper Scissor</title>
+    </head>
+    <body>
 
-    <!-- styles -->
-    <link rel="stylesheet" href="./style/style.css" />
-    <!-- insert bootstrap link -->
-    <!-- title -->
-    <title>Rock Paper Scissor</title>
-  </head>
-  <body>
-    <!-- scripts -->
-    <script src="./script/main.js"></script>
-  </body>
+        <main>
+    
+            <div id="intro-div">
+                <h1>Rock Paper Scissor</h1>
+            </div>
+    
+            <div id="win-div">
+                <h1>You Win!</h1>
+            </div>
+    
+            <div id="lose-div">
+                <h1>You Lose!</h1>
+            </div>
+    
+            <div id="draw-div">
+                <h1>Draw!</h1>
+            </div>
+    
+            <div id="result-div">
+                <h1 id="result">You 0:0 AI</h1>
+            </div>
+    
+            <div id="turn-div">
+                <h1 id="turn">Your Turn</h1>
+            </div>
+    
+            <div>
+                <div id="choice-input-div">
+                    <div class="choice-div">
+                        <label for="paper-button">
+                            <img src="./assets/images/paper.png" alt="" class="choice-img">
+                        </label>
+                        <input type="radio" name="choice" value="paper" id="paper-button" class="choice-input">
+                    </div>
+                    <div class="choice-div">
+                        <label for="scissor-button">
+                            <img src="./assets/images/scissor.png" alt="" class="choice-img">
+                        </label>
+                        <input type="radio" name="choice" value="scissor" id="scissor-button" class="choice-input">
+                    </div>
+                    <div class="choice-div">
+                        <label for="rock-button">
+                            <img src="./assets/images/rock.png" alt="" class="choice-img">
+                        </label>
+                        <input type="radio" name="choice" value="rock" id="rock-button" class="choice-input">
+                    </div>
+                </div>
+                <div>
+                    <button id="game-button" onclick="game()">START</button>
+                </div>
+            </div>
+    
+    
+        </main>
+
+        <script src="./script/script.js"></script>
+    </body>
 </html>
