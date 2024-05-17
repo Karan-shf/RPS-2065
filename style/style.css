@@ -5,7 +5,6 @@
 }
 
 body {
-    /* margin: auto; */
     display: flex;
     justify-content: center;
     background-color: #3B2A9F;
@@ -15,7 +14,28 @@ body {
 main {
     width: 90%;
     text-align: center;
-    /* background-color: green; */
+}
+
+#game-mode {
+    padding-top: 25%;
+}
+
+.mode-button {
+    margin-top: 5px;
+    padding: 20px 40px;
+    font-size: 20px;
+}
+
+.mode-button:hover {
+    opacity: 0.7;
+}
+
+#single-player-div {
+    display: none;
+}
+
+#multi-player-div {
+    display: none;
 }
 
 #win-div {
@@ -48,11 +68,12 @@ main {
 
 .choice-div {
     width: 33.33%;
-    /* background-color: red; */
 }
 
 .choice-img {
-    width: 100%;
+    width: 80%;
+    height: 80%;
+    display: block;
 }
 
 .choice-input {
@@ -61,9 +82,8 @@ main {
 }
 
 #game-button {
-    margin-top: 1rem;
+    margin-top: -1rem;
     padding: 10px 40px;
-    /* width: 15%; */
     border-radius: 16px;
     border: solid white 3px;
     color: white;
@@ -74,4 +94,65 @@ main {
 #game-button:hover {
     color: red;
     border-color: red;
+}
+
+#two-intro-div {
+    margin-top: 1rem;
+}
+
+#two-result-div {
+    margin-top: 2rem;
+}
+
+#two-game-button {
+    margin-top: 2rem;
+    padding: 10px 40px;
+    border-radius: 16px;
+    border: solid white 3px;
+    color: white;
+    background-color: inherit;
+    font-size: 20px;
+}
+
+#two-game-button:hover {
+    color: red;
+    border-color: red;
+}
+
+#two-game-div {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between
+}
+
+.two-player-choice {
+    width: 49%;
+    text-align: left;
+}
+
+.two-player-hint {
+    padding-left: 1rem;
+}
+
+.two-img-div {
+    margin-top: 1rem;
+    border-radius: 16px;
+    padding: 10px 10px;
+}
+
+.two-img-div img {
+    width: 32%;
+}
+
+#player1-img {
+    background-color: #7b64ff;
+}
+
+#player2-img {
+    background-color: #c45757;
+}
+
+.p-choice {
+    margin-top: 0.5rem;
+    margin-left: 1rem;
 }
